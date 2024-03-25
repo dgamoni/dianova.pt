@@ -1,0 +1,1 @@
+[06-Oct-2016 23:28:22 Europe/Lisbon] PHP Fatal error:  Call to undefined function get_header() in /home/dianova/public_html/wp-content/themes/stardustwp/index.php on line 1

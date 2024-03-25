@@ -1,0 +1,4 @@
+[09-Jul-2016 04:34:12 CST6CDT] PHP Fatal error:  Call to undefined function load_theme_textdomain() in /home/dianova7/public_html/wp-content/themes/stardustwp/functions.php on line 3
+[09-Jul-2016 04:45:58 CST6CDT] PHP Fatal error:  Call to undefined function load_theme_textdomain() in /home/dianova7/public_html/wp-content/themes/stardustwp/functions.php on line 3
+[09-Jul-2016 04:47:42 CST6CDT] PHP Fatal error:  Call to undefined function load_theme_textdomain() in /home/dianova7/public_html/wp-content/themes/stardustwp/functions.php on line 3
+[21-Jul-2016 02:47:07 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/dianova7/public_html/wp-content/themes/stardustwp/index.php on line 1

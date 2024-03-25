@@ -1,0 +1,106 @@
+/*
+Theme Name: Stardust
+Theme URI: http://demo.qodeinteractive.com/stardust/
+Description: Stardust Theme
+Tags: modern, clean, design, art, case study, full screen, full width, parallax, creative, portfolio, business, photography, agency, ajax
+Author: Qode Interactive
+Author URI: http://www.qodeinteractive.com/
+Version: 1.6
+License: GNU General Public License
+License URI: licence/GPL.txt
+
+*/
+
+/*
+CSS changes can be made in files in the /css/ folder. This is a placeholder file required by WordPress, so do not delete it.
+
+1.6
+- Updated Revolution Slider to version 5.1.3
+
+1.5
+- Updated PrettyPhoto to 3.1.6
+- Updated Revolution Slider to version 4.6.93
+- Fixed prettyPhoto XSS
+
+1.4
+- Updated TGM Plugin Activation class for security vulnerability
+- Updated Revolution Slider to version 4.6.9
+
+1.3
+- Updated Revolution Slider to version 4.6.5
+
+1.2.1
+- Improved page transition to register page loading with Google Analytics
+- Fixed dropdown menu position when boxed layout is enabled
+- Fixed bug with click event with ctrl key pressed and page transitions
+
+1.2
+- Updated Revolution Slider to version 4.6
+- Fixed bug with duplicating portfolios on home page when load more is clicked
+- Fixed video play state on closing of portfolio post in portfolio list shortcode
+
+1.1
+- Updated Revolution Slider to version 4.3.6
+- Fixed WP 3.9 Qode Shortcodes button bug
+
+1.0.6
+- Fixed WP 3.8 notices
+
+1.0.5
+- Updated Revolution Slider to version 4.1.1
+- Fixed deliting of custom sidebars
+- Fixed portfolio list for new version of Chrome
+
+1.0.4
+- Added Blog Template 3 which displays whole post in the list
+- Fixed Portfolio single page description
+- Fixed contact page when recaptcha is enable
+- Fixed portfolio list style for mozilla mac
+
+1.0.3
+- Updated Revolution Slider to version 3.0.95
+- Updated portfolio options to open url in new tab/window
+
+1.0.2
+- Added multiple sidebars support
+- Added global sidebar settings for single blog to Qode Options under "Blog" section
+- Updated translation files
+- Fixed revolution slider arrow css
+- Fixed latest posts shortcode
+
+1.0.1
+- Added field to Qode options to center logo and menu
+- Improved parallax logic for touch devices
+- Fixed portfolio single load on touch devices
+- Fixed responsive portfolio for safari
+- Fixed responsiveness for logo
+
+*/
+
+.container_inner{
+    width: 1024px !important;
+}
+
+
+
+.newsletter-field {
+    text-align: right;
+}
+.newsletter-field-email, input { width: 100% !important; 
+}
+.newsletter-field label {
+    text-align: left;
+}
+newsletter table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border: 1px solid #EEE;
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 10px #999;
+}
+
+.title h1 {
+    text-align: center;
+}
+
