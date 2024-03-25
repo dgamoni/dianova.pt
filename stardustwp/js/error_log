@@ -1,0 +1,186 @@
+[23-Oct-2016 13:09:44 UTC] PHP Notice:  register_sidebar foi chamado <strong>incorretamente</strong>. register_sidebar (Esta mensagem foi adicionada na versão 4.2.0.)  in /home/dianova/public_html/wp-includes/functions.php on line 3996
+[23-Oct-2016 13:09:44 UTC] PHP Notice:  register_sidebar foi chamado <strong>incorretamente</strong>. register_sidebar (Esta mensagem foi adicionada na versão 4.2.0.)  in /home/dianova/public_html/wp-includes/functions.php on line 3996
+[23-Oct-2016 13:20:33 UTC] PHP Notice:  register_sidebar foi chamado <strong>incorretamente</strong>. register_sidebar (Esta mensagem foi adicionada na versão 4.2.0.)  in /home/dianova/public_html/wp-includes/functions.php on line 3996
+[23-Oct-2016 13:20:33 UTC] PHP Notice:  register_sidebar foi chamado <strong>incorretamente</strong>. register_sidebar (Esta mensagem foi adicionada na versão 4.2.0.)  in /home/dianova/public_html/wp-includes/functions.php on line 3996
+[23-Oct-2016 14:32:21 UTC] PHP Warning:  require_once(/home/dianova/public_html/wp-content/plugins/newsletter/users/users.php): failed to open stream: No such file or directory in /home/dianova/public_html/wp-content/plugins/newsletter/plugin.php on line 1434
+[23-Oct-2016 14:32:21 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/dianova/public_html/wp-content/plugins/newsletter/users/users.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/dianova/public_html/wp-content/plugins/newsletter/plugin.php on line 1434
+[23-Oct-2016 14:32:21 UTC] PHP Warning:  require_once(/home/dianova/public_html/wp-content/plugins/newsletter/users/users.php): failed to open stream: No such file or directory in /home/dianova/public_html/wp-content/plugins/newsletter/plugin.php on line 1434
+[23-Oct-2016 14:32:21 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/dianova/public_html/wp-content/plugins/newsletter/users/users.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/dianova/public_html/wp-content/plugins/newsletter/plugin.php on line 1434
+[16-Dec-2016 12:04:35 UTC] PHP Warning:  mysqli_query(): (HY000/1030): Got error 28 from storage engine in /home/dianova/public_html/wp-includes/wp-db.php on line 1868
+[16-Dec-2016 12:04:35 UTC] PHP Warning:  mysqli_query(): (HY000/1030): Got error 28 from storage engine in /home/dianova/public_html/wp-includes/wp-db.php on line 1868
+[16-Dec-2016 12:04:35 UTC] Erro na base de dados do WordPress Got error 28 from storage engine na query 
+					SELECT DISTINCT 
+						s.id,
+						s.name,
+						s.context,
+						st.status,
+						s.gettext_context, 
+						st.value AS tra,
+						s.value AS orig
+					FROM wpbq_icl_string_pages sp
+					INNER JOIN wpbq_icl_string_urls su
+						ON su.id = sp.url_id
+					INNER JOIN wpbq_icl_strings s
+						ON s.id = sp.string_id
+					LEFT JOIN wpbq_icl_string_translations st
+						ON s.id=st.string_id
+							AND st.language=su.language
+							AND s.language!=su.language
+					WHERE (su.language='pt-pt' and su.url='/wp-content/themes/stardustwp/js/custom_js.php') or (su.language='pt-pt' and su.url IS NULL)
+					 feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/stardustwp/functions.php'), include_once('/themes/stardustwp/includes/qode-options.php'), get_option, apply_filters('option_qode_options_stardust'), call_user_func_array, WPML_Admin_Texts->icl_st_translate_admin_string, WPML_Admin_Texts->icl_st_translate_admin_string, icl_t, icl_translate, WPML_Register_String_Filter->translate_by_name_and_context, WPML_Displayed_String_Filter->translate_by_name_and_context, WPML_ST_DB_Cache->get_translation, WPML_ST_Page_Translations_Cached_Persist->get_translations_for_page, WPML_ST_Page_Translations_Persist->get_translations_for_page, W3TC\DbCache_Wpdb->query, W3TC\DbCache_WpdbInjection_QueryCaching->query, W3TC\_CallUnderlying->query, W3TC\DbCache_Wpdb->query, W3TC\DbCache_WpdbInjection->query, W3TC\DbCache_Wpdb->default_query
+[16-Dec-2016 12:04:35 UTC] PHP Warning:  mysqli_num_fields() expects parameter 1 to be mysqli_result, boolean given in /home/dianova/public_html/wp-includes/wp-db.php on line 3078
+[16-Dec-2016 12:04:35 UTC] Erro na base de dados do WordPress Got error 28 from storage engine na query 
+					SELECT DISTINCT 
+						s.id,
+						s.name,
+						s.context,
+						st.status,
+						s.gettext_context, 
+						st.value AS tra,
+						s.value AS orig
+					FROM wpbq_icl_string_pages sp
+					INNER JOIN wpbq_icl_string_urls su
+						ON su.id = sp.url_id
+					INNER JOIN wpbq_icl_strings s
+						ON s.id = sp.string_id
+					LEFT JOIN wpbq_icl_string_translations st
+						ON s.id=st.string_id
+							AND st.language=su.language
+							AND s.language!=su.language
+					WHERE (su.language='pt-pt' and su.url='/wp-content/themes/stardustwp/js/default_dynamic.php') or (su.language='pt-pt' and su.url IS NULL)
+					 feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/stardustwp/functions.php'), include_once('/themes/stardustwp/includes/qode-options.php'), get_option, apply_filters('option_qode_options_stardust'), call_user_func_array, WPML_Admin_Texts->icl_st_translate_admin_string, WPML_Admin_Texts->icl_st_translate_admin_string, icl_t, icl_translate, WPML_Register_String_Filter->translate_by_name_and_context, WPML_Displayed_String_Filter->translate_by_name_and_context, WPML_ST_DB_Cache->get_translation, WPML_ST_Page_Translations_Cached_Persist->get_translations_for_page, WPML_ST_Page_Translations_Persist->get_translations_for_page, W3TC\DbCache_Wpdb->query, W3TC\DbCache_WpdbInjection_QueryCaching->query, W3TC\_CallUnderlying->query, W3TC\DbCache_Wpdb->query, W3TC\DbCache_WpdbInjection->query, W3TC\DbCache_Wpdb->default_query
+[16-Dec-2016 12:04:35 UTC] PHP Warning:  mysqli_num_fields() expects parameter 1 to be mysqli_result, boolean given in /home/dianova/public_html/wp-includes/wp-db.php on line 3078
+[16-Dec-2016 12:04:35 UTC] Erro na base de dados do WordPress Got error 28 from storage engine na query SHOW FULL COLUMNS FROM `wpbq_options` feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('wp_loaded'), call_user_func_array, WP_Rewrite->flush_rules, update_option, W3TC\DbCache_Wpdb->update, W3TC\DbCache_WpdbInjection_QueryCaching->update, W3TC\_CallUnderlying->update, W3TC\DbCache_Wpdb->update, W3TC\DbCache_WpdbInjection->update, W3TC\DbCache_Wpdb->default_update, W3TC\DbCache_Wpdb->query, W3TC\DbCache_WpdbInjection->query, W3TC\DbCache_Wpdb->default_query
+[16-Dec-2016 12:04:35 UTC] Erro na base de dados do WordPress Got error 28 from storage engine na query SHOW FULL COLUMNS FROM `wpbq_options` feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('wp_loaded'), call_user_func_array, WP_Rewrite->flush_rules, update_option, W3TC\DbCache_Wpdb->update, W3TC\DbCache_WpdbInjection_QueryCaching->update, W3TC\_CallUnderlying->update, W3TC\DbCache_Wpdb->update, W3TC\DbCache_WpdbInjection->update, W3TC\DbCache_Wpdb->default_update, W3TC\DbCache_Wpdb->query, W3TC\DbCache_WpdbInjection->query, W3TC\DbCache_Wpdb->default_query
+[16-Dec-2016 12:04:35 UTC] PHP Warning:  mysqli_query(): (HY000/1030): Got error 28 from storage engine in /home/dianova/public_html/wp-includes/wp-db.php on line 1868
+[16-Dec-2016 12:04:35 UTC] Erro na base de dados do WordPress Got error 28 from storage engine na query 
+					SELECT DISTINCT 
+						s.id,
+						s.name,
+						s.context,
+						st.status,
+						s.gettext_context, 
+						st.value AS tra,
+						s.value AS orig
+					FROM wpbq_icl_string_pages sp
+					INNER JOIN wpbq_icl_string_urls su
+						ON su.id = sp.url_id
+					INNER JOIN wpbq_icl_strings s
+						ON s.id = sp.string_id
+					LEFT JOIN wpbq_icl_string_translations st
+						ON s.id=st.string_id
+							AND st.language=su.language
+							AND s.language!=su.language
+					WHERE (su.language='pt-pt' and su.url='/wp-content/themes/stardustwp/js/custom_js.php') or (su.language='pt-pt' and su.url IS NULL)
+					 feita por shutdown_action_hook, do_action('shutdown'), call_user_func_array, WPML_ST_DB_Cache->shutdown, WPML_ST_Page_Translations_Cached_Persist->store_new_translations, WPML_ST_Page_Translations_Persist->get_translations_for_page, W3TC\DbCache_Wpdb->query, W3TC\DbCache_WpdbInjection_QueryCaching->query, W3TC\_CallUnderlying->query, W3TC\DbCache_Wpdb->query, W3TC\DbCache_WpdbInjection->query, W3TC\DbCache_Wpdb->default_query
+[16-Dec-2016 12:04:35 UTC] PHP Warning:  mysqli_num_fields() expects parameter 1 to be mysqli_result, boolean given in /home/dianova/public_html/wp-includes/wp-db.php on line 3078
+[16-Dec-2016 12:04:36 UTC] PHP Warning:  mysqli_query(): (HY000/1030): Got error 28 from storage engine in /home/dianova/public_html/wp-includes/wp-db.php on line 1868
+[16-Dec-2016 12:04:36 UTC] Erro na base de dados do WordPress Got error 28 from storage engine na query 
+					SELECT DISTINCT 
+						s.id,
+						s.name,
+						s.context,
+						st.status,
+						s.gettext_context, 
+						st.value AS tra,
+						s.value AS orig
+					FROM wpbq_icl_string_pages sp
+					INNER JOIN wpbq_icl_string_urls su
+						ON su.id = sp.url_id
+					INNER JOIN wpbq_icl_strings s
+						ON s.id = sp.string_id
+					LEFT JOIN wpbq_icl_string_translations st
+						ON s.id=st.string_id
+							AND st.language=su.language
+							AND s.language!=su.language
+					WHERE (su.language='pt-pt' and su.url='/wp-content/themes/stardustwp/js/default_dynamic.php') or (su.language='pt-pt' and su.url IS NULL)
+					 feita por shutdown_action_hook, do_action('shutdown'), call_user_func_array, WPML_ST_DB_Cache->shutdown, WPML_ST_Page_Translations_Cached_Persist->store_new_translations, WPML_ST_Page_Translations_Persist->get_translations_for_page, W3TC\DbCache_Wpdb->query, W3TC\DbCache_WpdbInjection_QueryCaching->query, W3TC\_CallUnderlying->query, W3TC\DbCache_Wpdb->query, W3TC\DbCache_WpdbInjection->query, W3TC\DbCache_Wpdb->default_query
+[16-Dec-2016 12:04:36 UTC] PHP Warning:  mysqli_num_fields() expects parameter 1 to be mysqli_result, boolean given in /home/dianova/public_html/wp-includes/wp-db.php on line 3078
+[19-Jan-2017 17:51:13 UTC] PHP Warning:  mysqli_query(): (HY000/1030): Got error 28 from storage engine in /home/dianova/public_html/wp-includes/wp-db.php on line 1877
+[19-Jan-2017 17:51:13 UTC] WordPress database error Got error 28 from storage engine for query 
+					SELECT DISTINCT 
+						s.id,
+						s.name,
+						s.context,
+						st.status,
+						s.gettext_context, 
+						st.value AS tra,
+						s.value AS orig
+					FROM wpbq_icl_string_pages sp
+					INNER JOIN wpbq_icl_string_urls su
+						ON su.id = sp.url_id
+					INNER JOIN wpbq_icl_strings s
+						ON s.id = sp.string_id
+					LEFT JOIN wpbq_icl_string_translations st
+						ON s.id=st.string_id
+							AND st.language=su.language
+							AND s.language!=su.language
+					WHERE (su.language='pt-pt' and su.url='/wp-content/themes/stardustwp/js/default_dynamic.php') or (su.language='pt-pt' and su.url IS NULL)
+					 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, wpseo_init, WPSEO_Meta::init, WPSEO_Options::get_option, get_option, apply_filters('option_wpseo_social'), WP_Hook->apply_filters, call_user_func_array, WPML_Admin_Texts->icl_st_translate_admin_string, WPML_Admin_Texts->icl_st_translate_admin_string, icl_t, icl_translate, WPML_Register_String_Filter->translate_by_name_and_context, WPML_Displayed_String_Filter->translate_by_name_and_context, WPML_ST_DB_Cache->get_translation, WPML_ST_Page_Translations_Cached_Persist->get_translations_for_page, WPML_ST_Page_Translations_Persist->get_translations_for_page
+[19-Jan-2017 17:51:13 UTC] Erro na base de dados do WordPress Got error 28 from storage engine na query SHOW FULL COLUMNS FROM `wpbq_options` feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('wp_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, WP_Rewrite->flush_rules, update_option
+[19-Jan-2017 17:51:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dianova/public_html/wp-includes/wp-db.php:1877) in /home/dianova/public_html/wp-content/themes/stardustwp/js/default_dynamic.php on line 8
+[19-Jan-2017 17:51:13 UTC] PHP Warning:  mysqli_query(): (HY000/1030): Got error 28 from storage engine in /home/dianova/public_html/wp-includes/wp-db.php on line 1877
+[19-Jan-2017 17:51:13 UTC] WordPress database error Got error 28 from storage engine for query 
+					SELECT DISTINCT 
+						s.id,
+						s.name,
+						s.context,
+						st.status,
+						s.gettext_context, 
+						st.value AS tra,
+						s.value AS orig
+					FROM wpbq_icl_string_pages sp
+					INNER JOIN wpbq_icl_string_urls su
+						ON su.id = sp.url_id
+					INNER JOIN wpbq_icl_strings s
+						ON s.id = sp.string_id
+					LEFT JOIN wpbq_icl_string_translations st
+						ON s.id=st.string_id
+							AND st.language=su.language
+							AND s.language!=su.language
+					WHERE (su.language='pt-pt' and su.url='/wp-content/themes/stardustwp/js/custom_js.php') or (su.language='pt-pt' and su.url IS NULL)
+					 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, wpseo_init, WPSEO_Meta::init, WPSEO_Options::get_option, get_option, apply_filters('option_wpseo_social'), WP_Hook->apply_filters, call_user_func_array, WPML_Admin_Texts->icl_st_translate_admin_string, WPML_Admin_Texts->icl_st_translate_admin_string, icl_t, icl_translate, WPML_Register_String_Filter->translate_by_name_and_context, WPML_Displayed_String_Filter->translate_by_name_and_context, WPML_ST_DB_Cache->get_translation, WPML_ST_Page_Translations_Cached_Persist->get_translations_for_page, WPML_ST_Page_Translations_Persist->get_translations_for_page
+[19-Jan-2017 17:51:13 UTC] PHP Warning:  mysqli_query(): (HY000/1030): Got error 28 from storage engine in /home/dianova/public_html/wp-includes/wp-db.php on line 1877
+[19-Jan-2017 17:51:13 UTC] Erro na base de dados do WordPress Got error 28 from storage engine na query 
+					SELECT DISTINCT 
+						s.id,
+						s.name,
+						s.context,
+						st.status,
+						s.gettext_context, 
+						st.value AS tra,
+						s.value AS orig
+					FROM wpbq_icl_string_pages sp
+					INNER JOIN wpbq_icl_string_urls su
+						ON su.id = sp.url_id
+					INNER JOIN wpbq_icl_strings s
+						ON s.id = sp.string_id
+					LEFT JOIN wpbq_icl_string_translations st
+						ON s.id=st.string_id
+							AND st.language=su.language
+							AND s.language!=su.language
+					WHERE (su.language='pt-pt' and su.url='/wp-content/themes/stardustwp/js/default_dynamic.php') or (su.language='pt-pt' and su.url IS NULL)
+					 feita por shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, WPML_ST_DB_Cache->shutdown, WPML_ST_Page_Translations_Cached_Persist->store_new_translations, WPML_ST_Page_Translations_Persist->get_translations_for_page
+[19-Jan-2017 17:51:13 UTC] Erro na base de dados do WordPress Got error 28 from storage engine na query SHOW FULL COLUMNS FROM `wpbq_options` feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('wp_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, WP_Rewrite->flush_rules, update_option
+[19-Jan-2017 17:51:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dianova/public_html/wp-includes/wp-db.php:1877) in /home/dianova/public_html/wp-content/themes/stardustwp/js/custom_js.php on line 8
+[19-Jan-2017 17:51:13 UTC] PHP Warning:  mysqli_query(): (HY000/1030): Got error 28 from storage engine in /home/dianova/public_html/wp-includes/wp-db.php on line 1877
+[19-Jan-2017 17:51:13 UTC] Erro na base de dados do WordPress Got error 28 from storage engine na query 
+					SELECT DISTINCT 
+						s.id,
+						s.name,
+						s.context,
+						st.status,
+						s.gettext_context, 
+						st.value AS tra,
+						s.value AS orig
+					FROM wpbq_icl_string_pages sp
+					INNER JOIN wpbq_icl_string_urls su
+						ON su.id = sp.url_id
+					INNER JOIN wpbq_icl_strings s
+						ON s.id = sp.string_id
+					LEFT JOIN wpbq_icl_string_translations st
+						ON s.id=st.string_id
+							AND st.language=su.language
+							AND s.language!=su.language
+					WHERE (su.language='pt-pt' and su.url='/wp-content/themes/stardustwp/js/custom_js.php') or (su.language='pt-pt' and su.url IS NULL)
+					 feita por shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, WPML_ST_DB_Cache->shutdown, WPML_ST_Page_Translations_Cached_Persist->store_new_translations, WPML_ST_Page_Translations_Persist->get_translations_for_page

@@ -739,6 +739,44 @@ function custom_languages_menu($items) {
     return $items;
 }
 //add_filter( 'wp_nav_menu_items', 'custom_languages_menu',10,2 );
+// DIGITALCLAP - Contact form 7 > Newsletteradd_filter('wpcf7_form_action_url', 'wpcf7_custom_form_action_url');function wpcf7_custom_form_action_url($url){    global $post;    $id_to_change = 1;	if ($wpcf7_contact_form->ID === 3733) {        return 'http://bmmapi.bright.pt/integration/subscriber?ClientKey=dianovanews';    else        return $url;}
 
+// @dgamoni
+function newsletter_bright_method() {
 
+	wp_enqueue_script( 'newsletter_bright-request', get_template_directory_uri() . '/js/newsletter_bright.js' );
+	wp_localize_script( 'newsletter_bright-request', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+		
+}
+
+add_action('wp_ajax_my_action', 'newsletter_bright_callback');
+add_action('wp_ajax_nopriv_my_action', 'newsletter_bright_callback');
+
+function newsletter_bright_callback() {
+	die();
+}
+add_action( 'wp_enqueue_scripts', 'newsletter_bright_method' );
+
+function newsletter_bright_pt() {
+$out = '<div class="column_inner">
+			<h6>Newsletter</h6>
+			<div class="tnp tnp-widget">
+				
+					<div class="tnp-field tnp-field-email">
+						<label>Email</label>
+						<input id="newsletter_bright-email" class="tnp-email" type="email" name="ne" required="true">
+					</div>
+					<div class="tnp-field tnp-field-button">
+						<input id="newsletter_bright-submit" data-title="test" class="tnp-submit" type="submit" value="Subscribe">
+					</div>
+					<div id="newsletter_bright-info">
+						<p class="succes">Thank you!</p>
+						<p class="error">Error!</p>
+						<p class="valid">Not valid email</p>
+					</div>
+				
+			</div>
+		</div>';
+	return $out; 
+}
 ?>
